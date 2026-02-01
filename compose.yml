@@ -11,8 +11,8 @@ services:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
     networks:
-      - bombs
+      - external-net
       
 networks:
-  bombs:
+  external-net:
     external: true
